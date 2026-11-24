@@ -1,5 +1,5 @@
 // วาง Google Apps Script Web App URL ระหว่างเครื่องหมายอัญประกาศด้านล่าง
-const SHEET_API_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbx0yCiu6k4y8Vf4__fKHYfm26ihjc_jKR67Db-8SOrpSVXr0idHOKEpza1cEXgbGO56_w/exec';
 const products = {SC001:{name:'Herbal Fresh Shampoo',price:159},SC002:{name:'Silky Smooth Shampoo',price:189}};
 const skuSelect=document.getElementById('sku'),qtyInput=document.getElementById('qty'),total=document.getElementById('total');
 function updateTotal(){const p=products[skuSelect.value];total.textContent=`ยอดรวม ฿${p.price*Math.max(1,Number(qtyInput.value)||1).toLocaleString('th-TH')}`}
